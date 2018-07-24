@@ -4,6 +4,8 @@ This is a real-time chat based on Laravel, Node.js, Socket.io and Redis to link 
 The application sends messages in real-time using socket.io as well as keeps them on db for later.<br/>
 <b>This project offers one-to-one chat!. Enjoy guysss...</b>
 
+# Pre-aquisition
+        Create database laravelChat in mysql
 # How to run the app
 	composer install
 	npm install

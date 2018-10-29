@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Conversation;
 use App\User;
 use Auth;
+
 class HomeController extends Controller
 {
     /**
@@ -25,8 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $users = User::where('id','!=',Auth::user()->id)->get();
+        $users = User::where('id', '!=', Auth::user()->id)->get();
         $conversations = Auth::user()->conversations();
-        return view('home',compact('users','conversations'));
+
+        return view('home', compact('users', 'conversations'));
     }
 }

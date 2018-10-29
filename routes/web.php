@@ -18,6 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::get('user/register',['uses'=>'UserController@register','as'=>'user.register']);
-Route::resource('conversation','ConversationController');
-Route::resource('message','MessageController');
+Route::get('user/register', ['uses'=>'UserController@register', 'as'=>'user.register']);
+Route::resource('conversation', 'ConversationController');
+Route::resource('message', 'MessageController');

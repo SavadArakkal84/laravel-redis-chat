@@ -10,12 +10,14 @@ class Conversation extends Model
     {
         return $this->hasMany('App\Message')->orderBy('created_at', 'asc');
     }
+
     public function user1()
     {
-        return $this->belongsTo('App\User','user1');
+        return $this->belongsTo('App\User', 'user1');
     }
+
     public function user2()
     {
-        return $this->belongsTo('App\User','user2');
+        return $this->belongsTo('App\User', 'user2');
     }
 }
